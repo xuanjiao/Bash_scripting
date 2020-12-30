@@ -1,8 +1,9 @@
-#!/bin/sh
-ORI_DIR=$1
-NEW_DIR=/home/pi/c_str/${1##*/}
+#!/bin/bash
+
+read -p "Please enter the path of the source code directory: " ORI_DIR
 COMP_DIR=/home/pi/share
 MYD=`date +%d_%m_%Y`
+NEW_DIR=/home/pi/c_str/${ORI_DIR##*/}
 
 if [ -d $NEW_DIR ]; then
 	rm ${NEW_DIR}/* 		# If the directory exists, empty this directory.
