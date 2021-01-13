@@ -1,8 +1,8 @@
 #!/bin/bash
 
 read -p "Please enter the path of the compressed file: " FILE 
-C_DIR="c_files"
-H_DIR="h_files"
+C_DIR="file_unzip/c_files"
+H_DIR="file_unzip/h_files"
 C_CNT=0
 H_CNT=0
 
