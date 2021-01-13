@@ -25,4 +25,10 @@ sh run.sh
 
 ### 3. Display usage
 
-This bash script is going to output a table showing date and the percentages of memory, disk and CPU used on the machine
+Showing the percentages of memory, disk and CPU used on the machine
+![3](./img/usage.png)
+
+### 4. Create Multiple Users
+
+Create multiple users 
+
