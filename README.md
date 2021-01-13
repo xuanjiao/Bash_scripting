@@ -10,6 +10,7 @@ git clone https://github.com/xuanjiao/Bash_scripting.git
 ```
 sh run.sh
 ```
+
 2.  Type the option number
 
 ## Option explanation
@@ -26,9 +27,12 @@ sh run.sh
 ### 3. Display usage
 
 Showing the percentages of memory, disk and CPU used on the machine
-![3](./img/usage.png)
 
-### 4. Create Multiple Users
+![usage](./img/usage.png)
 
-Create multiple users 
+### 4. Create multiple users
+Create multiple users with random password, and then save the user name and passsword to a text file.
 
+![user1](./img/multi_user.png)
+
+![user2](./img/multi_user2.png)
