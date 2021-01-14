@@ -1,5 +1,13 @@
 # Systems_programming (2020)
 
+A series of bash scripts. It has the following functions:
+
+1.	Backup source code
+2.  Unzip und classify files
+3.  Display usage
+4.  Create multiple users
+
+
 ## Installation 
 ```
 git clone https://github.com/xuanjiao/Bash_scripting.git
@@ -7,6 +15,7 @@ git clone https://github.com/xuanjiao/Bash_scripting.git
 
 ## Usage 
 1.  Run the script
+
 ```
 sh run.sh
 ```
@@ -16,8 +25,9 @@ sh run.sh
 ## Option explanation
 
 ### 1.	Backup source code
-* **Backup:** copy all C files in the specified directory to the "/home/c_str" directory.
-* **Compress:** compress these files into "src_dd_mm_yy.tgz" and copy them to the "/home/c_comp" directory.
+Backup and compress files in a path
+
+![back_up](./img/code_backup.png)
 
 ### 2.  Unzip und classify files
 * **Unzip:** unzip test.tar.gz. 

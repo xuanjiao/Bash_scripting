@@ -12,11 +12,13 @@ else
 fi
 
 echo "Back up files"
-cp ${ORI_DIR}/*.c ${NEW_DIR} # Copy files to the "/home/c_str" directory.
-echo "Done."
+cp ${ORI_DIR}/*.c $NEW_DIR # Copy files to the "/home/c_str" directory.
+echo "Done. Backup file path: $NEW_DIR"
 
 mkdir -p $COMP_DIR
 echo "Compress files"
-cd $NEW_DIR && tar -zcvf src_${MYD}.tgz . # Compress files and copy them to the "/home/c_comp" directory.
-cp src_${MYD}.tgz $COMP_DIR
-echo "Done."
+# Compress files and copy them to the "/home/c_comp" directory.
+cd $NEW_DIR && tar -zcvf src_${MYD}.tgz . 1>/dev/null
+
+cp src_${MYD}.tgz $COMP_DIR 1>/dev/null
+echo "Done. Compress file path: ${COMP_DIR}/src_${MYD}.tgz"
