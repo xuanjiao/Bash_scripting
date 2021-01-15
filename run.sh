@@ -8,6 +8,7 @@ cat<<EOF
 * 2.	Unzip and classify file
 * 3.	Display disk and memory usage
 * 4.	Create multiple users
+* 5.	Query for database
 * q.	Quit
 *************************************************
 EOF
@@ -28,6 +29,10 @@ display_usage/display_usage.sh
 
 4)
 create_users/create_users.sh
+;;
+
+5)
+sql_query/sql_query.sh
 ;;
 
 q)	

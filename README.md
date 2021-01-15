@@ -1,4 +1,4 @@
-# Systems_programming (2020)
+# Bash scripting (2020)
 
 A series of bash scripts. It has the following functions:
 
@@ -8,21 +8,30 @@ A series of bash scripts. It has the following functions:
 4.  Create multiple users
 
 
-## Installation 
+## Installation
 ```
 git clone https://github.com/xuanjiao/Bash_scripting.git
 ```
 
-## Usage 
+## Usage
 1.  Run the script
 
 ```
-sh run.sh
+pi@raspberrypi:~/Projects/Bash $ ./run.sh
+
+*************************************************
+* 1.	Backup Source code
+* 2.	Unzip and classify file
+* 3.	Display disk and memory usage
+* 4.	Create multiple users
+* 5.	Query for database
+* q.	Quit
+*************************************************
+
 ```
 
-2.  Type the option number
+2.  Type the option number. The following are instructions for all options:
 
-## Option explanation
 
 ### 1.	Backup source code
 Backup and compress files in a path
@@ -46,3 +55,31 @@ Create multiple users with random password, and then save the user name and pass
 ![user1](./img/multi_user.png)
 
 ![user2](./img/multi_user2.png)
+
+### 5. SQL Query
+Query for exployee information in the database
+
+```
+5
+Please enter the employee's name: James Smith
+Please enter the database password: pi
+employees
++--------+------------+------------+-----------+--------+------------+
+| emp_no | birth_date | first_name | last_name | gender | hire_date  |
++--------+------------+------------+-----------+--------+------------+
+|  10001 | 1970-01-23 | James      | Smith     | M      | 2020-06-26 |
++--------+------------+------------+-----------+--------+------------+
+```
+
+If database not exist
+```
+5
+Please enter the employee's name: James Smith
+Please enter the database password: pi
+Database employees not exists. Create database.
++--------+------------+------------+-----------+--------+------------+
+| emp_no | birth_date | first_name | last_name | gender | hire_date  |
++--------+------------+------------+-----------+--------+------------+
+|  10001 | 1970-01-23 | James      | Smith     | M      | 2020-06-26 |
++--------+------------+------------+-----------+--------+------------+
+```
