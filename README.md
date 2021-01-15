@@ -36,26 +36,64 @@ pi@raspberrypi:~/Projects/Bash $ ./run.sh
 ### 1.	Backup source code
 Backup and compress files in a path
 
-![back_up](./img/code_backup.png)
-
+```
+1
+Please enter the path of the source code directory: code_backup/test
+Back up files
+Done. Backup file path: /home/pi/c_str/test
+Compress files
+tar: .: Datei hat sich beim Lesen geändert.
+Done. Compress file path: /home/pi/share/src_15_01_2021.tgz
+```
 ### 2.  Unzip und classify files
-* **Unzip:** unzip test.tar.gz. 
-* **Classify:** Copy all c files to the "c_dir" directory and all headle files into the "h_dir" directory.
-* **Info:** Create a text file "dirinfo.txt" and list all c and headle files, count files.
+Unzip the compressed package and place the files in categories.
+
+```
+2
+Please enter the path of the compressed file: file_unzip/test.tar.gz
+Decompress files
+Classify files
+Done
+```
+
+Directory contents:
+```
+file_unzip
+├── c_files (C files were placed here)
+│   ├── test1.c
+│   └── test2.c
+├── file_unzip.sh
+├── h_files (Header files were placed here)
+│   └── test1.h
+└── test.tar.gz (Compressed file)
+```
 
 ### 3. Display usage
 
 Showing the percentages of memory, disk and CPU used on the machine
 
-![usage](./img/usage.png)
+```
+3
+Memory Usage: 327/924MB (35.4%)
+Disk Usage: 7873/14637MB (57%)
+```
 
 ### 4. Create multiple users
 Create multiple users with random password, and then save the user name and passsword to a text file.
-
-![user1](./img/multi_user.png)
-
-![user2](./img/multi_user2.png)
-
+```
+4
+Please enter the user name: kiwi
+Please enter the number of new user: 3
+New user created: kiwi1
+New user created: kiwi2
+New user created: kiwi3
+```
+```
+new_user.txt
+kiwi1	68b329da
+kiwi2	ee1ae285
+kiwi3	ea1e8111
+```
 ### 5. SQL Query
 Query for exployee information in the database
 
