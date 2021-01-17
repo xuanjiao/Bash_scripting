@@ -6,7 +6,8 @@ A series of bash scripts. It has the following functions:
 2.  Unzip und classify files
 3.  Display usage
 4.  Create multiple users
-
+5.	Query for database
+6.	Log in a remote server
 
 ## Installation
 ```
@@ -25,12 +26,13 @@ pi@raspberrypi:~/Projects/Bash $ ./run.sh
 * 3.	Display disk and memory usage
 * 4.	Create multiple users
 * 5.	Query for database
+* 6.	Log in a remote server
 * q.	Quit
 *************************************************
 
 ```
 
-2.  Type the option number. The following are instructions for all options:
+2.  Type an option number(1-6). The following are instructions for all options:
 
 
 ### 1.	Backup source code
@@ -109,7 +111,7 @@ employees
 +--------+------------+------------+-----------+--------+------------+
 ```
 
-If database not exist
+If the database not exist, create a database.
 ```
 5
 Please enter the employee's name: James Smith
@@ -120,4 +122,18 @@ Database employees not exists. Create database.
 +--------+------------+------------+-----------+--------+------------+
 |  10001 | 1970-01-23 | James      | Smith     | M      | 2020-06-26 |
 +--------+------------+------------+-----------+--------+------------+
+```
+
+### 6. Log in to a remote server
+According to the entered server name, find the corresponding IP address in the text file and log in to the server via ssh.
+
+```
+6
+Please enter the server name: pi
+Loging in to remote server: 192.168.0.103...
+pi@192.168.0.103's password: 
+Linux raspberrypi 5.4.79-v7+ #1373 SMP Mon Nov 23 13:22:33 GMT 2020 armv7l
+
+......
+
 ```

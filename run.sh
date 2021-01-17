@@ -9,6 +9,7 @@ cat<<EOF
 * 3.	Display disk and memory usage
 * 4.	Create multiple users
 * 5.	Query for database
+* 6.	Log in a remote server
 * q.	Quit
 *************************************************
 EOF
@@ -33,6 +34,10 @@ create_users/create_users.sh
 
 5)
 sql_query/sql_query.sh
+;;
+
+6)
+remote_server/remote_server.sh
 ;;
 
 q)	
